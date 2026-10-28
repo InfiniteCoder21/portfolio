@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tejas Gundapaneni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;1,500&family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#1d4f9c; --bg:#ffffff; --tint:#f3f5fa; --text:#171b22; --muted:#4b5565; --line:#cfd7e6; --onblue:#ffffff;
+  --display:'Archivo',Arial,Helvetica,sans-serif; --serif:'Alegreya',Georgia,serif; --body:'Source Sans 3',system-ui,Arial,sans-serif;
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--primary:#7aa5ee;--bg:#0d131e;--tint:#131b2a;--text:#eef2f9;--muted:#a8b4c8;--line:#26354f;--onblue:#0d131e;color-scheme:dark}
+}
+:root[data-theme="dark"]{--primary:#7aa5ee;--bg:#0d131e;--tint:#131b2a;--text:#eef2f9;--muted:#a8b4c8;--line:#26354f;--onblue:#0d131e;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 56px)}
+body{margin:0;background:var(--bg);color:var(--text);font:18px/1.65 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{max-width:1040px;margin:auto;display:flex;gap:1.3rem;align-items:center;padding:.65rem 1.2rem;overflow-x:auto;white-space:nowrap}
+nav b{font-family:var(--display);color:var(--primary);margin-right:auto}
+nav a{color:var(--text);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--primary);text-decoration:underline}
+section{position:relative;overflow:hidden;padding:4.5rem 1.2rem}
+.wrap{max-width:820px;margin:0 auto;position:relative;z-index:1}
+.blue{background:var(--primary);color:var(--onblue)}
+.blue a{color:var(--onblue)}
+.tint{background:var(--tint)}
+h1,h2{font-family:var(--display);line-height:1.05;margin:0 0 1.2rem;letter-spacing:-.01em}
+h1{font-size:clamp(2.8rem,9vw,5.6rem);text-transform:lowercase}
+h2{font-size:clamp(1.9rem,5vw,2.8rem);text-transform:lowercase}
+h2 small{font-size:.5em;opacity:.55;margin-right:.5rem}
+h3{font-family:var(--serif);font-size:1.35rem;margin:1.8rem 0 .3rem;color:var(--primary)}
+.blue h3{color:var(--onblue)}
+.sub{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--primary);margin:0 0 1.5rem}
+p{margin:0 0 1rem}
+.waves{position:absolute;z-index:0;pointer-events:none;width:min(520px,65vw)}
+.waves path{fill:none;stroke:var(--primary);stroke-width:7}
+.blue .waves path{stroke:var(--onblue);opacity:.9}
+.tr{top:-40px;right:-110px}.bl{bottom:-70px;left:-130px;transform:rotate(180deg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem}
+@media(max-width:700px){.two{grid-template-columns:1fr}}
+.row{display:grid;grid-template-columns:150px 1fr;gap:.2rem 1rem;border-top:1px solid var(--line);padding:.6rem 0}
+.row b{color:var(--primary)}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+ul{margin:.2rem 0 1rem;padding-left:1.2rem}
+li{margin:.15rem 0}
+.about{display:block}
+@media(max-width:700px){.about{grid-template-columns:1fr}}
+.photo{aspect-ratio:4/5;width:100%;max-width:230px;border:1.5px dashed var(--primary);display:grid;place-items:center;color:var(--primary);font-size:.95rem;text-align:center;padding:1rem}
+.soon{border-left:3px solid var(--primary);padding-left:1rem;color:var(--muted)}
+.proj{border-top:1px solid var(--line);padding:1.2rem 0}
+.proj h3{margin-top:0}
+.meta{font-size:.95rem;color:var(--muted);margin-bottom:.6rem}
+.quote{font-family:var(--serif);font-style:italic;font-size:1.45rem;color:var(--primary);border-left:4px solid var(--primary);padding-left:1rem;margin:2rem 0 0}
+a{color:var(--primary)}
+footer{padding:2rem 1.2rem;text-align:center;font-size:.9rem;color:var(--muted);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header><nav>
+  <b>tejas gundapaneni</b>
+  <a href="#home">Home</a><a href="#about">About</a><a href="#resume">Résumé</a><a href="#ism">ISM</a><a href="#mentor">Mentor</a><a href="#research">Research</a><a href="#blog">Blog</a><a href="#projects">Projects</a>
+</nav></header>
+
+<section id="home">
+  <svg class="waves tr" viewBox="0 0 560 400" aria-hidden="true"></svg>
+  <div class="wrap" style="padding-top:3rem">
+    <h1>tejas<br>gundapaneni</h1>
+    <p class="sub">Frisco, Texas. Class of 2028.</p>
+    <p>If you caught me on a random weekday, I’d be in one of four places: band rehearsal with my euphonium, the pool with Ford Aquatics, a court at Frisco Fieldhouse, or hunched over a laptop building something.</p>
+    <p>I also dance. Indian classical and fusion is a big part of my life, and I’ve performed on stage in front of Hrithik Roshan and Sreeleela, which is still one of the wildest things I’ve done.</p>
+    <p>This site is where all of it lives: who I am, what I’ve built, and what I’m working on this year. Poke around.</p>
+    <p class="quote">“A jack of all trades is a master of none, but oftentimes better than a master of one.”</p>
+  </div>
+</section>
+
+<section id="about" class="blue">
+  <svg class="waves bl" viewBox="0 0 560 400" aria-hidden="true"></svg>
+  <div class="wrap">
+    <h2><small>01</small>about me</h2>
+    <div class="about">
+      <div>
+        <p>I’m a student at Frisco High School with a 4.0 unweighted GPA, and I plan to study artificial intelligence, machine learning, and computer science. I started with websites and kept going: backend systems in Java and Python, frontends in HTML, CSS, and JavaScript, and lately a lot of TensorFlow and transformers.</p>
+        <p>Outside of code I’m in the Frisco band program (euphonium, section leader, TMEA All Region in 2025 and 2026), compete in TSA, BPA, and DECA, and volunteer on zero waste and hunger projects.</p>
+        <h3>mission</h3>
+        <p>I want to build technology that solves real problems, especially ones that keep students from getting access to a good education.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resume">
+  <div class="wrap" style="max-width:1000px">
+    <h2><small>02</small>résumé</h2>
+    <h3>technical skills</h3>
+    <div class="row"><b>Languages</b><span>Java, Python, JavaScript, C++, SQL, Julia, R, Rust</span></div>
+    <div class="row"><b>Web &amp; ML</b><span>HTML, CSS, TensorFlow, Transformers, Django, Flask</span></div>
+    <div class="row"><b>Deployment</b><span>Netlify, Microsoft Azure, Vercel, Railway</span></div>
+    <div class="row"><b>Focus</b><span>Artificial Intelligence, Machine Learning, Backend Systems, Web Development</span></div>
+
+    <div class="two">
+      <div>
+        <h3>education</h3>
+        <p><b>Frisco High School</b>, Frisco, TX<br>Class of 2028 · Unweighted GPA 4.0<br>Intended field: AI, Machine Learning, Computer Science</p>
+        <h3>coursework</h3>
+        <p><b>This year:</b> AP Calculus BC, AP Environmental Science, AP U.S. History, AP English Language, Computer Science III, ISM, Band</p>
+        <p><b>Completed:</b> AP Computer Science Advanced, AP Precalculus, AP Physics 1, AP Statistics, AP World History, English II, Band</p>
+        <p><b>AP exam scores of 5:</b> Human Geography, Computer Science Advanced, Statistics, World History, Physics 1</p>
+      </div>
+      <div>
+        <h3>activities</h3>
+        <ul>
+          <li><b>Band (Euphonium):</b> section leader, brass captain candidate, Division I ratings at solo and ensemble, TMEA All Region ’25 and ’26</li>
+          <li><b>BPA and DECA:</b> competitor</li>
+          <li><b>Basketball:</b> Frisco Fieldhouse</li>
+          <li><b>Swimming:</b> Ford Aquatics</li>
+          <li><b>Indian classical and fusion dance:</b> performed before Hrithik Roshan and Sreeleela</li>
+        </ul>
+        <h3>honors</h3>
+        <ul>
+          <li>AP Scholar, STAAR Academic Excellence, Honor Roll</li>
+          <li>1st Place Overall, Best UI/UX Design, and Best Technical Implementation at high school hackathons</li>
+          <li>Regional Science Fair participant (DFW) and Special Recognition Award, 2x</li>
+          <li>TSA and DECA state qualifier</li>
+          <li>Presidential Youth Leadership &amp; Service Award</li>
+          <li>Kroger Zero Waste and Zero Hunger recognitions, Ambassador National Community Service Award</li>
+          <li>GDYO member, Division 1 solo and ensemble, Judges’ Choice Award for dance</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:1.5rem">Email: <a href="mailto:tgundapaneni21@gmail.com">tgundapaneni21@gmail.com</a></p>
+  </div>
+</section>
+
+<section id="ism" class="tint">
+  <div class="wrap">
+    <h2><small>03</small>about ism</h2>
+    <p>[ISM logo goes here]</p>
+    <p>Independent Study and Mentorship is a competitive, research-based program where students get matched with industry mentors and work on a real-world problem for the year. I was selected for it, and my work is in artificial intelligence, machine learning, and computer science.</p>
+    <p class="soon">More on my topic and what I’m building is coming as the year goes on.</p>
+  </div>
+</section>
+
+<section id="mentor">
+  <div class="wrap">
+    <h2><small>04</small>mentor bio</h2>
+    <p class="soon">I’m still getting set up with my mentor. Their bio and what we’re working on together will go here.</p>
+  </div>
+</section>
+
+<section id="research" class="blue">
+  <svg class="waves tr" viewBox="0 0 560 400" aria-hidden="true"></svg>
+  <div class="wrap">
+    <h2><small>05</small>research</h2>
+    <p>Not started yet. Interviews, sources, and mentor visits will be added here as I do them.</p>
+  </div>
+</section>
+
+<section id="blog">
+  <div class="wrap">
+    <h2><small>06</small>blog</h2>
+    <p class="soon">No posts yet. The first one is coming soon.</p>
+  </div>
+</section>
+
+<section id="projects" class="tint">
+  <div class="wrap">
+    <h2><small>07</small>projects</h2>
+
+    <div class="proj">
+      <h3>SDG Champions website</h3>
+      <div class="meta">Multi-District Wide Officer (CTO) · 17 schools across Frisco, Plano, Allen, and Maseno, Kenya</div>
+      <p>I designed, coded, and deployed the organization’s website from start to finish using HTML, CSS, JavaScript, and Firebase. Since then I’ve handled performance, new features, and deployment, and I help coordinate technology between our districts and our partners in Kenya.</p>
+      <p><a href="https://sdgchamps.org" target="_blank" rel="noopener">sdgchamps.org</a></p>
+    </div>
+
+    <div class="proj">
+      <h3>TSA Elite website</h3>
+      <div class="meta">Co-Founder &amp; President · Technology Student Association Elite</div>
+      <p>I built our team’s site from scratch with Cursor and Loveable, with responsive layouts, simple navigation, and consistent branding. I also lead competition prep and team operations.</p>
+      <p><a href="https://tsaelite.netlify.app" target="_blank" rel="noopener">tsaelite.netlify.app</a></p>
+    </div>
+
+    <div class="proj">
+      <h3>Backend, frontend, and AI projects</h3>
+      <div class="meta">Independent work</div>
+      <p>Backend systems in Java and Python, several frontend apps, and projects aimed at access-to-education problems for underprivileged students. I care a lot about clean architecture and building things that can scale.</p>
+    </div>
+
+    <p class="soon">My ISM project will be added here once it’s underway.</p>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Tejas Gundapaneni · Frisco, Texas · <a href="#home">back to top</a></footer>
+
+<script>
+(function(){
+  try{document.getElementById('yr').textContent=new Date().getFullYear()}catch(e){}
+  document.querySelectorAll('.waves').forEach(function(svg){
+    var s='';
+    for(var i=0;i<11;i++){
+      var y=40+i*23,a=28+i*3;
+      s+='<path d="M0,'+y+' C140,'+(y-a)+' 260,'+(y+a*1.4)+' 400,'+(y+10)+' S520,'+(y-a)+' 560,'+(y+a)+'"/>';
+    }
+    svg.innerHTML=s;
+  });
+  function go(id){var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'})}
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){e.preventDefault();go(a.getAttribute('href').slice(1))});
+  });
+  if(location.hash)setTimeout(function(){go(location.hash.slice(1))},100);
+})();
+</script>
+</body>
+</html>
